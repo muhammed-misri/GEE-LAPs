@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="sidenav  py-4">
+
+        <a class="navbar-title py-4" style="color: white;"> GEE Uygulamaları</a>
+
+        <a class="tablinks" onclick="openCity(event, 'a1')" id="defaultOpen">
+            1. Ana sayfa
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a2')">
+            2. Ortamın Uzaktan Algılanmasına Giriş
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a3')">
+            3. Google Earth Engine Kullanmaya Başlaması
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a4')">
+            4. Yeryüzündeki Yüksekliği Görselleştirin
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a5')">
+            5. Uydulara ve Veri Toplama Hakkında
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a6')">
+            6. Azot Oksitlere Bakarak Hava Kalitesini Analizi
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a7')">
+            7. Yeryüzünde Uzaktan Algılama: Sıcaklık ölçme ve Analizi
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a8')">
+            8. Yeryüzünde Uzaktan Algılama: Gece Gündüz ortalama yeryüzündeki sıcaklıklarının analizi
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a9')">
+            9. Bitki Ötüsü Değişikliklerini Görselleştirme
+
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a10')">
+            10. Yeşil örtüsü ve orman kaybının analizi
+        </a>
+        <a class="tablinks" onclick="openCity(event, 'a11')">
+            11. Hazar Gölü için Su Kalitesi Analizi
+        </a>
+
+
+    </div>
+
+
+
+
+    <div class="header-title d-block text-center">
+        <a class="header-title-link pt-4">Google Earth Engine Labs</a>
+    </div>
+
+
+
+
+    <!--
+        
+    <div id="London" class="main tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="main tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="main tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    -->
+
+    <!-- &#39; -->
+    <!------ 1 ------------>
+    <!-- tabcontent just as a js .... for change the content-->
+    <div id="a1" class="main tabcontent">
+
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Coğrafi ekoloji ve uzaktan algılamaya hoş geldiniz!</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-10-24T00:00:00Z">October 24, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="pt-3 pb-5">
+                    <p class="pb-5">
+                        FIRAT Üniversitesi Yazılım Mühendisliği Bölümü öğrencisiyim.Sürdürülebilir peyzaj yönetimini ve
+                        biyolojik <br>çeşitliliğin
+                        korunmasını teşvik etmek için bu sömestr boyunca uyguladığım bir araştırma ve eğitim kaynakları
+                        koleksiyonunu, <br>mekânsal çevrenin coğrafi bir çalışmasını size sunuyorum.
+                    </p>
+
+                    <img src="images/1/1.png" class="big-img pt-5 pb-5">
+
+                    <hr>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+
+
+
+    <!------ 2 ------------>
+    <div id="a2" class="main tabcontent">
+
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Google Earth Engine Tanıtımı:</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-10-31T00:00:00Z">October 31, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="pt-3">
+
+                    <h4 class="pt-5 pb-3">Google Earth Engine Tanıtımı:</h4>
+                    <ul>
+                        <li>Google earth engine, jeo-uzamsal bir işleme hizmetidir.</li>
+                        <li>Earth engine ile, google cloud platform tarafından desteklenen geniş ölçekte jeo-uzamsal
+                            işleme gerçekleştirebilirsiniz.</li>
+                        <li>Google earth engine, çok petabaytlık bir uydu görüntüleri kataloğunu ve jeo-uzamsal veri
+                            kümelerini gezegen ölçeğinde
+                            analiz yetenekleriyle birleştirir.</li>
+                        <li>Bilim adamları, araştırmacılar ve geliştiriciler, dünya'nın yüzeyindeki değişiklikleri
+                            tespit etmek, eğilimleri
+                            haritalamak ve farklılıkları ölçmek için earth engine'i kullanır.</li>
+
+                        <li>Earth engine artık ticari kullanım için mevcuttur ve akademik ve araştırma amaçlı kullanım
+                            için ücretsizdir.</li>
+
+                    </ul><br>
+
+                    <h4 class="pt-5 pb-3">Earth Engine 'İn Amacı:</h4>
+                    <ul>
+                        <li>Geniş ölçekte jeo-uzamsal algoritma geliştirme için etkileşimli bir platform sağlayın.
+                        </li>
+                        <li>Yüksek etkili, veriye dayalı bilimi etkinleştirin.
+                        </li>
+                        <li>Büyük jeo-uzamsal veri kümelerini içeren küresel zorluklarda önemli ilerleme sağlayın.</li>
+                    </ul>
+
+                    <h4 class="pt-5 pb-3">Google earth motorunu kullanmaya başlamak için şunlara ihtiyacımız var:</h4>
+                    <ul>
+                        <li>Google chrome tarayıcı ve google earth engine hesabı.
+                            <a href="https://earthengine.google.com/" class="px-1">
+                                Earth engine hesap kaydi
+                            </a>
+                        </li>
+
+                        <li>Kaydolduktan sonra earth engine ortamına
+                            <a href="https://code.earthengine.google.com" class="px-1">buradan</a>
+                            erişebilirsiniz
+                        </li>
+                        <li>Google earth engine, javascript programlama dilini kullanır.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!------ 3 ------------>
+    <div id="a3" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Google Earth Engine Kullanmaya Başlaması</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-11-02T00:00:00Z">November 02, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <p class="pt-5 pb-2">
+                    İlk önce size google earth engine'in çalışma ortamı ve işlenmesi hakkında basit bir giriş yapacağım.
+                </p>
+
+                <img src="images/3/0.png" class="big-img pb-5">
+
+                <h4 class="pt-5 pb-3">Google Earth Engine kod düzenleyicisi:</h4>
+
+                <ol>
+                    <li>Editör Paneli: editör paneli, javascript kodunuzu yazdığınız ve düzenlediğiniz yerdir.</li>
+                    <img src="images/3/4.png" class="med-img pt-3 pb-5 px-5">
+
+                    <li>Sağ Panel: Çıktı yazdırmak için konsol sekmesi.Harita sonuçlarını sorgulamak için denetçi
+                        sekmesi.
+                        <br>Uzun süren görevleri yönetmek için Görevler sekmesi.
+                    </li>
+                    <img src="images/3/22.png" class="med-img pt-3 pb-5 px-5">
+                    <img src="images/3/21.png" class="med-img pt-3 pb-5 px-5">
+                    <img src="images/3/23.png" class="med-img pt-3 pb-5 px-5">
+
+                    <li>Sol Panel: Programlama komut dosyalarınızı yönetmek için komut dosyaları sekmesi.
+                        <br>Earth Engine nesneleri ve yöntemlerinin belgelerine ve ayrıca Code Editor uygulamasına özgü
+                        birkaç belgeye erişmek için
+                        Dokümanlar sekmesi.
+                        <br>Yüklediğiniz varlıkları yönetmek için Varlıklar sekmesi.
+                    </li>
+                    <img src="images/3/1.png" class="med-img pt-3 pb-5 px-5">
+                    <img src="images/3/2.png" class="med-img pt-3 pb-5 px-5">
+                    <img src="images/3/3.png" class="med-img pt-3 pb-5 px-5">
+
+
+                    <li>İnteraktif Harita: Harita katmanı çıktısını görselleştirmek için</li>
+                    <img src="images/3/5.png" class="med-img pt-3 pb-5 px-5">
+
+                    <li>Arama Çubuğu: Veri kümelerini ve ilgi çekici yerleri bulmak için.</li>
+                    <img src="images/3/6.png" class="med-img pt-3 pb-5 px-5">
+
+                    <li>
+                        Yardım Menüsü:<br>
+                        - Kullanıcı kılavuzu başvuru belgeleri.<br>
+                        - Earth engine'i tartışmak için yardım forumu google grubu.<br>
+                        - Kısayollar kod düzenleyici için klavye kısayolları.<br>
+                        - Kod düzenleyiciye özellik turuna genel bakış.<br>
+                        - Kod düzenleyici hakkında geri bildirim göndermek için geri bildirim.<br>
+
+                        - Bir veri kümesi önerin. Amacımız, genel arşivimizde veri kümeleri toplamaya ve bunları daha
+                        erişilebilir hale getirmeye
+                        devam etmektir, bu nedenle, earth engine genel arşivine hangi yeni veri kümelerini almamız
+                        gerektiğine ilişkin önerileri takdir ediyoruz.
+
+                    </li>
+                    <img src="images/3/7.png" class="med-img pt-3 pb-2 px-5">
+                    <img src="images/3/8.png" class="med-img pt-3 pb-5 px-5">
+
+                </ol>
+
+            </div>
+        </article>
+
+    </div>
+
+
+    <!------ 4 ------------>
+    <div id="a4" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Editörün tüm araçlarını kullanmamıza yardımcı olacak bir uygulama yapacağız:
+                </h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-11-09T00:00:00Z">November 09, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="pt-3">
+                    <h4 class="pt-5 pb-5">İlk Uygulammız Yeryüzündeki Yüksekliği Görselleştirin </h4>
+
+                    <ol>
+                        <li>"elevation" (Yükseklik) için arama yapıyoruz ve veri kümesinin açıklamasını görüntülemek
+                            için
+                            SRTM Digital Elevation Data
+                            30m sonucuna tıklıyoruz.
+                        </li>
+                        <img src="images/4/1.1.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>Gördüğümüz gibi, bu maske ile ilgili bilgileri inceleyebilir ve hakkında daha fazla bilgi
+                            edinebiliriz.</li>
+                        <img src="images/4/2.png" class="big-img pt-3 pb-5 px-5">
+
+
+
+
+                        <li>Bu veritabanını içe aktaracağız, betiğinizin üst kısmındaki içe aktarma bölümüne yeni bir
+                            değişken ekleneceğini
+                            unutmayın.
+                        </li>
+                        <img src="images/4/3.png" class="smalimg pt-3 pb-5 px-5">
+
+
+
+                        <li>Aşağıdaki gibi değiştiricinin adını değiştirebilirim.</li>
+                        <img src="images/4/4.png" class="small-img pt-3 pb-5 px-5">
+
+
+
+                        <li>Alınan haritanın verilerini yazdırabiliriz.</li>
+                        <img src="images/4/5.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Yeni veri katmanını da kaydedebiliriz.</li>
+                        <img src="images/4/6.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>inspector tıklamayıla Haritada birkaç noktaya tıkladıktan sonra o bölgedeki
+                            yükseklik aralığını görebiliriz.<br>
+                            Veya maskeye ve kullanılan verilere göre bu alanla ilgili verileri vurgulayın.
+                        </li>
+                        <img src="images/4/7.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Şimdi kodu aşağıdaki gibi ayarlayarak daha uygun görselleştirme parametrelerini
+                            ayarlayabilirsiniz (birimler deniz
+                            seviyesinden metre cinsindendir):</li>
+                        <img src="images/4/8.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>Artık düşük değerler siyah ve en yüksek noktalar beyaz ile yükseklik aralığındaki değişimi
+                            görebileceksiniz.<br>
+                            Haritaya eklenen katmanlar, “Layer1", " Layer2" vb. gibi varsayılan adlara sahip
+                            olacaktır.<br>
+                            Okunabilirliği artırmak için, aşağıdaki kodda sözdizimi ile bir başlık ekleyerek her katmana
+                            insan tarafından okunabilir
+                            bir ad verebiliriz.
+                        </li>
+                        <img src="images/4/9.png" class="big-img pt-3 pb-5 px-5">
+
+
+
+                        <li>Farklı renk kombinasyonları da deneyebilirim, aşağıdaki örneğe göre renk paletleri ile
+                            oynayabilirsiniz: </li>
+                        <img src="images/4/10.png" class="big-img pt-3 pb-5 px-5">
+
+
+
+                        <li>Daha iyi görselleştirme için, yükseklik verilerinin tepe gölgesi görünümünü oluşturabiliriz.
+                        </li>
+                        <img src="images/4/11.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Eğim benzer şekilde gösterebiliriz</li>
+                        <img src="images/4/12.png" class="big-img pt-3 pb-5 px-5">
+
+                    </ol>
+
+
+
+
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/yy-ykseklik-maski">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+
+    <!------ 5 ------------>
+    <div id="a5" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Sentinels ve MODIS Uyduları:</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-11-16T00:00:00Z">November 16, 2022</time>
+                </div>
+            </div>
+
+
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="pt-3 ">
+                    <h4 class="pt-3 pb-2">Sentinels: ESA tarafından geliştirilen ve aşağıdakileri içeren uyduların bir
+                        takımyıldızıdır:
+                    </h4>
+
+
+
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/sentinel">
+                        <img src="images/5/0.png" class="med-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pt-2 pb-5">
+                        <li>Sentinel-1A ve Sentinel-1B'den tüm hava koşullarına uygun radar görüntüleri.</li>
+                        <li>Sentinel-2A ve Sentinel-2B'den yüksek çözünürlüklü optik görüntüler.</li>
+                        <li>Sentinel-3 ten çevre ve iklim izleme için uygun okyanus ve kara verilerinin yanı sıra
+                            Sentinel-5P 'den gelen hava kalitesi verileri.
+                        </li>
+                    </ul>
+
+
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_AER_AI"
+                            class="header-title-link">1- Sentinel-5P UV Aerosol Index</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_AER_AI">
+                        <img src="images/5/1.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Atmosferdeki aerosollerin yaygınlığının bir ölçüsü.
+                            Toz patlamaları, volkanik kül ve biyokütle yanmasından kaynaklanan epizodik aerosol
+                            bulutlarının evrimini izlemek için idealdir.
+                        </li>
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CLOUD"
+                            class="header-title-link">2- Sentinel-5P Cloud</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CLOUD">
+                        <img src="images/5/2.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Bulut özellikleri şunları içerir: taban ve tepe için kesir, yükseklik ve basınç,
+                            optik derinlik ve yüzey albedo.
+                        </li>
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CO"
+                            class="header-title-link">3- Sentinel-5P Carbon Monoxide</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CO">
+                        <img src="images/5/3.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Karbon monoksit (CO) ve su buharı konsantrasyonları.
+                            CO, troposferik kimyayı anlamamız için önemli bir atmosferik eser gazdır.
+                            Ana CO kaynakları fosil yakıtların yanması, biyokütle yanması ve metan ve diğer
+                            hidrokarbonların atmosferik
+                            oksidasyonudur.
+                        </li>
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_HCHO"
+                            class="header-title-link">4- Sentinel-5P Formaldehyde</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_HCHO">
+                        <img src="images/5/4.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Formaldehit konsantrasyonu.
+                            Formaldehit, metan olmayan uçucu organik bileşiklerin (NMVOC) hemen hemen tüm oksidasyon
+                            zincirlerinde bir ara gazdır ve
+                            sonunda CO₂'ye yol açar.
+                            Kaynaklar arasında bitki örtüsü, yangınlar, trafik ve endüstriyel yer alır.
+                        </li>
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2"
+                            class="header-title-link">5- Sentinel-5P Nitrogen Dioxide</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2">
+                        <img src="images/5/5.0.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Toplam, troposferik ve stratosferik nitrojen dioksit konsantrasyonu.
+                            Azot dioksit, fosil yakıt yanması ve biyokütle yakma gibi antropojenik faaliyetlerin yanı
+                            sıra topraktaki mikrobiyolojik
+                            süreçler, orman yangınları ve yıldırım gibi doğal süreçlerin bir sonucu olarak atmosfere
+                            girer.
+                        </li>
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_O3"
+                            class="header-title-link">6- Sentinel-5P Ozone</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_O3">
+                        <img src="images/5/6.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Toplam atmosferik sütun ozon konsantrasyonu.
+                            Ozon, biyosferi güneş ultraviyole radyasyonundan korur.
+                            Troposferde etkili bir temizleme maddesi görevi görür, ancak yüksek konsantrasyonlarda
+                            insan, hayvan ve bitki sağlığına
+                            da zararlı hale gelir.
+                            Ozon aynı zamanda devam eden iklim değişikliğine katkıda bulunan önemli bir sera gazıdır.
+                        </li>
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_SO2"
+                            class="header-title-link">7- Sentinel-5P Sulphur Dioxide</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_SO2">
+                        <img src="images/5/7.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Atmosferik kükürt dioksit (SO₂) konsantrasyonu.
+                            SO₂, çoğunluğu antropojenik kökenli olmasına rağmen, hem doğal hem de antropojenik süreçler
+                            yoluyla Dünya atmosferine
+                            girer.
+                            SO₂ emisyonları insan sağlığını ve hava kalitesini olumsuz etkiler ve ayrıca ışınımsal
+                            zorlama yoluyla iklim üzerinde de
+                            etkisi vardır.
+
+                        </li>
+
+                    </ul>
+
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CH4"
+                            class="header-title-link">8- Sentinel-5P Methane</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CH4">
+                        <img src="images/5/8.png" class="small-img pt-3 pb-5 px-5">
+                    </a>
+                    <ul class="pb-5">
+                        <li>Atmosferik metan (CH₄) konsantrasyonu.
+                            Karbondioksitten (CO₂) sonra, antropojenik olarak arttırılmış sera etkisine en önemli
+                            katkıyı yapandır.
+                            Çoğunluğu antropojenik kökenli olmasına rağmen, Dünya atmosferine hem doğal hem de
+                            antropojenik süreçlerle girer.
+
+                        </li>
+
+                    </ul>
+
+
+                    <hr><br><br>
+                    <hr>
+                    <p class="pt-5">
+                        <a href="https://developers.google.com/earth-engine/datasets" class="header-title-link">Earth
+                            Engine Data Catalog</a>
+                    </p>
+                    <a href="https://developers.google.com/earth-engine/datasets">
+                        <img src="images/5/9.png" class="big-img pt-3 pb-2 px-5">
+                    </a>
+                    <p class="pb-5 text-center">
+                        GEE Katagori Ana Sayfasıyla Landsat, Modis yeda Sentinel gibi diğer uyduların verileri da
+                        erişebiliriz.
+
+                    </p>
+
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+
+    <!------ 6 ------------>
+    <div id="a6" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Nitrojen Oksitler Analiz Etmek için Sentinel-5P ile Çalışacağız:</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-11-23T00:00:00Z">November 23, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+
+
+            <div class="post-content">
+
+                <p class="pt-4">
+                    Azot oksitler (NO2 ve NO), Dünya atmosferinde hem troposferde hem de stratosferde bulunan önemli
+                    eser gazlardır.
+                    Atmosfere antropojenik faaliyetler (özellikle fosil yakıt yanması ve biyokütle yakma) ve doğal
+                    süreçler (orman
+                    yangınları, yıldırım ve topraktaki mikrobiyolojik süreçler) sonucu girerler.
+                </p>
+
+
+                <div class="pt-5 ">
+                    <ul>
+                        <li>İlk programda bir nitrojen dioksit konsantrasyon haritası oluşturacağız.</li>
+                        <li>Öncü görev aracı, hava kalitesini değerlendirmek için faydalı veriler toplar.</li>
+                        <li>TROPOMI cihazı, atmosferik ozon, metan, formaldehit, aerosol, karbon monoksit, nitrojen
+                            oksit ve kükürt dioksit
+                            konsantrasyonlarının yanı sıra bulut özelliklerini yüksek çözünürlükte ölçmek için önemli
+                            olan dalga boylarının
+                            yansımasını kaydeden çok
+                            bantlı bir sensördür.
+                        </li>
+
+                        <div class="container  py-5">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a
+                                            href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2">
+                                            <img src="images/6/5.0.png" class="tiny-img px-2">
+                                        </a>
+                                    </div>
+                                    <div class="col-6"><a
+                                            href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_NO2">
+                                            <img src="images/6/5.1.png" class="tiny-img px-2">
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+
+
+
+
+                    <h4 class="pt-5 pb-5">Hava kalitesi analizini adımları: </h4>
+
+
+                    <ol>
+                        <li>
+                            ilk önce Türkiye'nin sınırları belirtmek için usdos veri Sentinels müydü kullanmayı
+                            gerekecek.
+                        </li>
+                        <img src="images/6/6.png" class="big-img pt-3 pb-5 px-5">
+                        <img src="images/6/7.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Atmosferin katmanlarına ait verilere ulaşabilmemiz için Sentinel-5P kullanacağız.
+                        </li>
+                        <img src="images/6/10.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>Türkiye'nin sınırları harita üzerinde bir katman olarak oluşturuyoruz.</li>
+                        <img src="images/6/11.png" class="big-img pt-3 pb-5 px-5">
+                        <img src="images/6/13.png" class="big-img pt-3 pb-5 px-5">
+                        <img src="images/6/14.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>
+                            Dinitrojenin özelliklerini takibi ve uygyn miktari alıyoruz.
+                        </li>
+                        <img src="images/6/15.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            oluşturılacağının maski reklemeleri yapıyoruz.
+                        </li>
+                        <img src="images/6/16.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>
+                            son olarak oluşturduk katmanı Google Drive e paylaşabiriz.</li>
+                        <img src="images/6/17.png" class="big-img pt-3 pb-5 px-5">
+
+
+                    </ol>
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/gy-hava-kalitesi">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+
+    <!------ 7 ------------>
+    <div id="a7" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Sıcaklık Ölçme ve Analizi etmek için MODIS Uyduları ile Çalışacağız:</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-11-30T00:00:00Z">November 30, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+
+            <div class="post-content">
+
+                <p class="pt-4 px-5">
+                    MOD11A1 V6 uydusu, 1200 x 1200 kilometrelik bir ızgarada günlük arazi yüzeyi sıcaklığı (LST) ve
+                    emisyon değerleri sağlar.<br><br>
+
+                    Açık gökyüzü kriterleri karşılandıktan sonra, bunun için veri piksel değerlerini analiz edeceğiz.
+                    Bu uydu bize gece ve gündüz hava katmanları için veri sağlar.
+                </p>
+
+                <div class="container py-5 px-5">
+                    <div class="row">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD11A1">
+                            <img src="images/7/1.png" class="med-img px-2">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="pt-2 ">
+                    <ul>
+                        <li>ilk önce ülkenin sınırları bellitmek için usdos Sentinels üydüden veri kullanmayı gerekecek.
+                        </li>
+                        <li>sonrada Isı haritası oluşturmak için Modis üydüden veri gerekmektedir.</li>
+                        <li>Daha sonra daha iyi bir görüntü için gerekli özellikleri hazırlayacağız.</li>
+                        <li>ve uluşturduk maskları renklemeyi yapacağız.</li>
+                    </ul>
+
+
+
+
+
+
+
+                    <h4 class="pt-5 pb-5">Sıcaklık ölçümü ve analiz adımları: </h4>
+
+
+                    <ol>
+                        <li>
+                            ilk önce Türkiye'nin sınırları belirtmek için usdos veri Sentinels müydü kullanmayı
+                            gerekecek.
+                        </li>
+                        <img src="images/7/3.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            yeryüzünde sıcaklık verilere ulaşabilmemiz için MOD11A1 kullanacağız.
+                        </li>
+                        <img src="images/7/4.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            sıcaklık alakalı özelliklerini takibi ve uygyn miktari belitiyoruz ve yeni bir harıta
+                            katmanı olarak ekliyoruz.
+                        </li>
+                        <img src="images/7/5.png" class="big-img pt-3 pb-5 px-5">
+
+                    </ol>
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/yy-sicaklik-maski">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+
+
+
+    <!------ 8 ------------>
+    <div id="a8" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Gece Gündüz ortalama sıcaklıklarını analizi</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-12-07T00:00:00Z">December 07, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="pt-3">
+                    <h5>Türkiye'de yeryüzey Sıcaklığı Harıtası çizdirmesi</h5>
+                    <ul>
+                        <li>Türkiye'de bir yıllık yeryüzey sıcaklığı (LST) verilerini içe aktarın.</li>
+                        <li>Zaman serisi çizelgesi kullanarak sıcaklıktaki zamansal kalıpları gözlemleyin.</li>
+                        <li>Ekran ve ihracat için ortalama yıllık sıcaklığı hesaplayın.</li>
+                        <li>Sonuçları grafikler ve etkileşimli kullanıcı arabirimleri aracılığıyla temsil edin.</li>
+                        <br />
+
+                    </ul>
+
+
+
+                    <h4 class="pt-5 pb-5">Gündüz ve gece arasındaki sıcaklığı ölçmek ve analiz etmek için adımlar: </h4>
+
+
+                    <ol>
+                        <li>
+                            ilk önce ülke verilerini almak için usdos veri Sentinels müydü kullanmayı gerekecek.
+                        </li>
+                        <img src="images/8/1.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>
+                            yeryüzeyi sıcaklık verilerini içe aktarması ve gerekli özellikleri işlemesi.
+                        </li>
+                        <img src="images/8/2.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            MODIS LST verileri kullanacağız.
+
+                            <p>
+                                birimleri Kelvin'e döndürmek için bu belirli MODIS verilerinin 0,02 ile çarpılması
+                                gerektiğini öğreneceksiniz.
+                                sonrada Kelvin'i Celsius'a çevirmek için 273,15 çıkarın.
+                            </p>
+                        </li>
+                        <img src="images/8/3.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>2015 yılında Türkiye için LST sıcaklığını zaman serisi grafiği oluşturmesı.</li>
+                        <img src="images/8/4.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Gerçek otalama sıcaklığının hesaplamak için Modis uydudan gelen verileri Türkiyeye için her
+                            8 gün olur.
+
+                        </li>
+                        <img src="images/8/5.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Gece gündüz Sıcaklık verilerini haritada görselenmesi.</li>
+                        <img src="images/8/6.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>son olarak oluşturduk katmanı Google Drive e paylaşabiriz.</li>
+                        <img src="images/8/7.png" class="big-img pt-3 pb-5 px-5">
+
+                    </ol>
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/yy-gece-gunduz-scaklk-analizi">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+
+    <!------ 9 ------------>
+    <div id="a9" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Zaman Serisi ile Bitki Ötüsü Değişikliklerini Görselleştirme</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-12-14T00:00:00Z">December 14, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="pt-3">
+                    <h5>Türkiye'de yeryüzey Sıcaklığı Harıtası çizdirmesi ve analiz etmeyi:</h5>
+
+                    <ul>
+                        <li>Türkiye'de bir yıllık yeryüzey sıcaklığı (LST) verilerini içe aktarın.</li>
+                        <li>Zaman serisi çizelgesi kullanarak sıcaklıktaki zamansal kalıpları gözlemleyin.</li>
+                        <li>Ekran ve ihracat için ortalama yıllık sıcaklığı hesaplayın.</li>
+                        <li>Sonuçları grafikler ve etkileşimli kullanıcı arabirimleri aracılığıyla temsil edin.</li>
+                        <br />
+
+                    </ul>
+
+                    <div class="row">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD11A1">
+                            <img src="images/7/1.png" class="med-img px-2">
+                        </a>
+
+                    </div>
+                    <hr>
+
+                    <div>
+                        <p class="py-4 px-3">
+
+                            Bu öğreticide, 1 Ocak ile 31 Aralık arasında değişen seri 16 günlük MODIS kompozitleri için
+                            20
+                            yıllık medyan NDVI'yı temsil eden bir animasyonlu GIF'in nasıl oluşturulacağını
+                            öğreneceksiniz.<br>
+
+                            MODIS, orta çözünürlüklü bir uydu görüntüleme sistemidir ve NDVI, yaygın bir yansıma tabanlı
+                            bitki örtüsü indeksidir.
+
+                        <ol class="px-5">
+                            <li>MODIS bitki örtüsü endeksleri veri kümesini alın ve NDVI bandını alt kümesini alın.</li>
+                            <li>İlgi alanını ve animasyon karesi geometrilerini tanımlayın.</li>
+                            <li>Bir birleştirme kullanarak aynı yıllık 16 günlük bileşik pencereden görüntüleri
+                                gruplandırın.</li>
+                            <li>Animasyon kareleri oluşturmak için bileşik grupları medyana göre azaltın.</li>
+                            <li>Görselleştirme parametrelerini tanımlayın ve verileri RGB görselleştirme görüntülerine
+                                dönüştürün.</li>
+                            <li>Sonuçları grafikler ve etkileşimli kullanıcı arabirimleri aracılığıyla temsil edin.</li>
+                            <br />
+
+                        </ol>
+
+                        <hr>
+                        </p>
+                    </div>
+
+                    <h4 class="pt-5 pb-5">Zaman Serisi ile Bitki Örtüsü Değişikliklerini Görselleştirme için adımlar:
+                    </h4>
+
+
+                    <ol>
+                        <li>
+                            MODIS veri setini ee.ImageCollection olarak alın ve NDVI bandını seçin ve Kırpma ve bölge
+                            sınırı geometrilerini tanımlayın.
+                        </li>
+                        <img src="images/9/1.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>
+                            Görüntüleri bileşik tarihe göre gruplandırınız.
+                            <p>
+                                Görüntüleri yeni eklenen 'doy' özelliğine göre gruplayan bir birleştirme işlemi
+                                uygulanacaktır.
+                            </p>
+
+                        </li>
+                        <img src="images/9/2.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Verilerin uygun şekilde üretilmesi ve sağlanması için Birleştirmeyi şu şekilde tamamlacağız.
+                        </li>
+                        <img src="images/9/3.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Kompozit grupları azaltı:
+                            <p>Aynı DOY a sahip görseller listesinden bir koleksiyon oluşturulabilir ve daha sonra
+                                bileşenlerinin medyanına
+                                indirgenebilir.</p>
+                        </li>
+                        <img src="images/9/4.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Tanımlanmış görselleştirme özelliklerini kullanarak görselleştirme yöntemini her görüntünün
+                            üzerine eşleyin ve arka plan
+                            piksellerini boş (siyah) olarak ayarlamak için verileri Adım 2'de tanımlanan maskeye kırpın.
+                        </li>
+                        <img src="images/9/5.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Son adım, önceki adımda oluşturulan RGB görselleştirme görüntüleri koleksiyonundan bir
+                            animasyon oluşturacak olan
+                            getVideoThumbURL yöntemi için argümanları tanımlamaktır.
+                        </li>
+                        <img src="images/9/6.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            animasyon tarayıcıda gösterme.
+                        </li>
+                        <img src="images/9/7.png" class="big-img pt-3 pb-5 px-5">
+
+                    </ol>
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/yy-bitki-ortusu-degisikliklerini-gor">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+
+    <!------ 10 ------------>
+    <div id="a10" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Yeşil örtüsü ve orman kaybının analizi</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-12-21T00:00:00Z">December 21, 2022</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="py-3">
+                    <h5>Türkiye'de yeryüzey Yeşıllik Harıtası çizdirmesi ve analiz etmeyi:</h5>
+
+                    <ul>
+                        <li>Landsat görüntülerinin zaman serisi analizi için Hansen Global Forest Change'i kullanması.
+                        </li>
+                        <li>Elde ettik sonuçlari ile Global orman kapsamını ve değişimini çıkartırma.</li>
+                        <li>Sonuçları histogram ile görüntüleme ve yıllık olarak analiz etme<br /></li>
+
+                    </ul>
+
+                    <p class="pt-5">Hansen Global Forest Change v1.9 kullanacaktır.<br>
+
+                        Bu uydu görüntüleri, küresel ormanların ve değişimin boyutunu açıklayan Landsat görüntülerinin
+                        zaman serisini
+                        göstermektedir.
+
+                    </p>
+                    <div class="row pt-3">
+                        <a
+                            href="https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2021_v1_9">
+                            <img src="images/10/1.png" class="med-img px-2">
+                        </a>
+
+                    </div>
+                    <hr>
+
+
+                    <p class="pt-3">
+                        Choose your
+                        <hr>
+                    </p>
+
+                    <h4 class="pt-5 pb-5">Yeşil örtüsü ve orman kaybının analizi için adımlar: </h4>
+
+
+                    <ol>
+                        <li>ilk önce ülkenin sınırları bellitmek için usdos Sentinels üydüden veri kullanmayı gerekecek.
+                        </li>
+                        <img src="images/10/2.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>
+                            Türkiye haritasındaki yeşil alanları detaylı ve yüksek özellikleriyle göstereceğiz ama
+                            renksiz.
+                            <p>Sonrada Bazı renk aralıklarını göstereceğiz.<br>
+                                Tüm aralıkların görselleştirilmesi için parametrelerin en yüksek değerini ayarlayacağız,
+                                max tutacağız</p>
+                        </li>
+                        <img src="images/10/3.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Yeşil alanların görünümünü iyileştiriyoruz, filtreleri ve gösterdikleri renk değerlerini
+                            hazırlıyoruz.
+                        </li>
+                        <img src="images/10/4.png" class="big-img pt-3 pb-5 px-5">
+                        <img src="images/10/5.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Sonuçları, görünüşe göre turuncu renkte kaybeden ve pembe renkte kazanan yeni katmanlar
+                            olarak gösteriyoruz.
+
+                        </li>
+                        <img src="images/10/6.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Orman Değişiminin Ölçülmesi, Öncü görev aracı,bantlı bir sensördür.
+                        </li>
+                        <img src="images/10/7.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Burada haritadaki pikselleri iyi dağıtmak için bazı hesaplamalar var.
+                        </li>
+                        <img src="images/10/8.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Ancak uydu görüntüsü standartlarına göre kayıp şu şekilde olacaktır.</li>
+                        <img src="images/10/9.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Arazi kayıp ve kazanç oranını kilometrekare olarak gösterebilmek için: 10^6 böleceğiz</li>
+                        <img src="images/10/10.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Gördüğümüz gibi, bu maske ile ilgili bilgileri inceleyebilir ve hakkında daha fazla bilgi
+                            edinebiliriz.</li>
+                        <img src="images/10/11.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>yıllara göre kayıp yüzdesini görüntüleyebiliriz.</li>
+                        <img src="images/10/12.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Son olarak, sonuçları histogram olarak yazdıracağız.</li>
+                        <img src="images/10/13.png" class="big-img pt-3 pb-5 px-5">
+
+
+
+                    </ol>
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/yy-orman-deiim-analizi">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+
+    <!------ 11 ------------>
+    <div id="a11" class="main tabcontent">
+        <article class="content pt-4">
+            <!------------------------- konu basligi  ------------------>
+            <div class="">
+                <h1 class="content-title">Hazar Gölü için Su Kalitesi Analizi</h1>
+                <div class="content-date px-1">
+                    <time datetime="2022-12-28T00:00:00Z">December 28, 2020</time>
+                </div>
+            </div>
+            <!------------------------- konu aciklamasi ------------------>
+            <div class="post-content">
+                <div class="py-3">
+                    <h5>Yeryüzünde Su Kalitesi Analizi</h5>
+
+                    <ul>
+                        <li>Su verilerin yeri tesbit ettme</li>
+                        <li>Uydu görüntülerini filtrelemyi yapacağız, Normalleştirilmiş Fark Klorofil İndeksi bulanık
+                            sularda klorofil
+                            konsantrasyonunun tahmininde kullanılır.
+                        </li>
+                        <li>NDWI kullanarak görüntüden su maskesi oluştur</li>
+                        <li>Sonuçları histogram ile görüntüleme ve yıllık olarak analiz etme<br /></li>
+                    </ul>
+
+
+                    <p class="pt-5 px-5">Sentinel-2 bitki örtüsünün, toprak ve su örtüsünün izlenmesinin yanı sıra iç su
+                        yolları ve kıyı alanlarının gözlemlenmesi de dahil olmak üzere Copernicus Land Monitoring
+                        çalışmalarını destekleyen geniş alanlı, yüksek çözünürlüklü, çok spektral bir görüntüleme
+                        görevidir.
+                    </p>
+                    <div class="row pt-3 px-5">
+                        <a href="https://developers.google.com/earth-engine/datasets/catalog/sentinel-2">
+                            <img src="images/11/1.png" class="med-img px-2">
+                        </a>
+
+                    </div>
+
+
+
+
+
+
+                    <h4 class="pt-5 pb-5">Yeryüzünde Su Kalitesi Analizi için adımlar: </h4>
+
+
+                    <ol>
+                        <li>
+                            ilk önce gölün verilerini ve sınırları elde ediyoruz.
+                        </li>
+                        <img src="images/11/3.png" class="big-img pt-3 pb-5 px-5">
+
+
+                        <li>
+                            Gölün verileri dosya olarak oluşturmak ve dışa aktarma biliriz.
+                        </li>
+                        <img src="images/11/4.png" class="big-img pt-3 pb-3 px-5">
+                        <img src="images/11/5.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            gölünün alakalı Uydudan gelen verileri yeni bir katman olarak gösteriyoruz.</li>
+                        <img src="images/11/6.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>
+                            Sentinel-2 verilerini kullanarak göl verilerine atamak istediğimiz özellikleri seçiyoruz ve
+                            ardından su yüzeyinin gerçek
+                            renkleri bir katmanını oluşturuyoruz.
+                        </li>
+                        <img src="images/11/7.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Filtreleme işlemini başlatmak için suya kendine özgü bir renk veriyoruz.</li>
+                        <img src="images/11/8.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>Diğer safsızlıkların renklerini farklı renklerle belirliyoruz.</li>
+                        <img src="images/11/9.png" class="big-img pt-3 pb-5 px-5">
+                        <img src="images/11/10.png" class="big-img pt-3 pb-5 px-5">
+
+                        <li>son olaral Normalleştirilmiş Fark Klorofil İndeksi bölgenin verileri ile karşılaştırıyoruz
+                            ve haritaya bir katman olarak ekliyoruz</li>
+                        <img src="images/11/11.png" class="big-img pt-3 pb-5 px-5">
+
+                    </ol>
+                    <!------------------------- gee app kismi ------------------>
+                    <style>
+                        .main-content-wrap {
+                            max-width: 1080px
+                        }
+                    </style>
+
+                    <div class="pt-5"></div>
+                    <hr>
+                    <h4 class="pt-5 text-center">
+                        Uygulamanın Demo Sürümünü Buradan Kullanabilirsiniz
+                    </h4>
+                    <iframe class="pt-1" frameborder="0" width="100%" height="600px"
+                        src="https://muhammed-misri.users.earthengine.app/view/yy-hazar-golu-su-kalitesi">
+                    </iframe>
+                    <div class="pt-5"></div>
+                    <hr>
+
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <!-- -------------------------- 2.2 footer ------- -->
+    <div class="d-block">
+        <!--
+              <div class="b-example-divider d-block"></div>
+              -->
+        <div class="container ">
+            <footer class="pt-5 pb-0 my-4">
+                <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="https://www.linkedin.com/in/muhammed-misri-81a8561ab/" class="nav-link px-2 text-muted">linkedin</a></li>
+                    <li class="nav-item"><a href="https://github.com/muhammed-misri" class="nav-link px-2 text-muted">github</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center text-muted ">&copy; 2023 Company, Inc</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
